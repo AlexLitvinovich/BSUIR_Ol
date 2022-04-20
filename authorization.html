@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/authoStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Authorization</title>
+</head>
+<body>
+    <div class="authorization">
+        <div class="autor-cont">
+            <div class="checkLog">
+                <input  type="radio" name="btnradio" value="Участник" id="userBtn"  checked>
+                <label  for="btnradio">Участник</label>
+    
+                <input  type="radio" name="btnradio" value="Администратор" id="userBtn"  >
+                <label  for="btnradio">Администратор</label>
+    
+            </div>
+            <div class="container-author">
+                <h2>BSUIR Olympiad</h2>
+                <div class="form-group active" id="regID">
+                    <p> Regestration </p>
+                    <input type="email" class="form-item " id="Email" placeholder="E-mail">
+                    <input type="text" class="form-item" id="RedLogin"  placeholder="Login">
+    
+                    <input type="password" class="form-item " id="regPassword" placeholder="Password">
+                    <input type="password" class="form-item " placeholder="Repeat password">
+    
+                    <button type="submit"  class="enter-btn" id="Reg-btn">Regestration</button>
+                </div>
+                <div class="form-group " id="athorID">
+                    <input type="email" class="form-item" id="login" placeholder="Login">
+    
+                    <input type="password" class="form-item" id="password" placeholder="Password">
+    
+                    <button type="submit" id="Athor-btn" class="enter-btn"><a href="Main_admin_1_2.html">Enter</a> </button>
+                    <a href="#"  class="registration ">Registration</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script >
+        const regBtn=document.getElementById('Reg-btn')
+    // console.log(regBtn)
+    regBtn.addEventListener('click',()=>{
+        $.ajax({
+            url:'/main.js',
+            type:"POST",
+            data:"{Email:'" + $('#Email').val() + "', Login:'" + $('#RedLogin').val() + "',Password:'" + $('#regPassword').val() + "'}",
+        })
+        console.log($.data)
+    })  
+    </script>
+</body>
+</html>

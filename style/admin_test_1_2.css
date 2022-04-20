@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+h2,p,h1,h3,h4,h5,li,a{
+    margin: 0;
+    color: #0E2240;
+}
+.header{
+    padding: 1% 1.5%;
+    border-bottom: 2px solid #0E2240;
+}
+.head_container{
+    display: flex;
+    align-items: center;
+}
+.head_container li {
+    list-style-type: none;
+    margin-right: 8vw;
+    font-size: 24px;
+    font-weight:bold;
+}
+.head_container li a{
+    text-decoration: none;
+}
+#home{
+    font-size: 36px;
+}
+
+.part_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.part_container h2{
+    text-align: center;
+    margin: 4vh 0 8vh 0;
+}
+
+.controll_btn_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5vh;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+#add_var{
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;
+}
+
+#add_var_alone{
+    align-self: flex-end;
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;  
+    margin: 0 8vw 0 0.5vw;
+}
+
+.testAlone{
+    text-align: center;
+    margin: 15vh 0 8vh 0;
+    font-size: 24px;
+}   
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+#del_var{
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    border: none;
+    background: #F01212;
+    border-radius: 10px;
+    margin: 0 8vw 0 0.5vw;
+}
+
+.var_container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    border: 2px solid #0E2240;
+    border-radius: 10px;
+    padding: 1.5vw  0.75vw;
+    margin: 1vh 0 1vh 3.5vw;
+}
+
+.var_container h3{
+    margin-left: 1.5vw;
+    font-size: 18px;
+    margin-bottom: 1.5vh;
+}
+
+.own_controll_container{
+    display: flex;
+}
+
+#edit{
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;
+}
+#del_own_var{
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    border: none;
+    background: #F01212;
+    border-radius: 10px;    
+    margin-right: 2.4vw;
+    margin-left: 0.75vw;
+}

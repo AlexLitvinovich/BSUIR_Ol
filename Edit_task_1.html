@@ -1,0 +1,56 @@
+<!--Тоже сомое и тут закоменчана чать с отсутсвием заданий,делать будем
+или через класс, или ajax-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/edit_task.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Admin_1</title>
+</head>
+<body>
+    <header class="header">
+        <div class="head_container">
+            <li id="home"><a href="Main_admin_1_2.html">BSUIR Olimpiad</a></li>
+            <li id="test"><a href="Admin_test_1.html">Тест</a></li>
+            <li id="member"><a href="Participant_1_2.html">Участники</a></li>
+        </div>
+    </header>
+    <div class="part_container">
+        <div class="upper">
+            <button id="back">Назад</button>
+            <h2>Задание <span id="num_of_task">3</span></h2>
+        </div>
+        <div class="edit_task">
+            <h3>Вопрос</h3>
+        <textarea name="question" id="text_question" cols="30" rows="10"></textarea>
+        <button id="add_photo">Прикрепить фото</button>
+        <div class="photo_container">
+            ФОТОГРАФИИ.....
+        </div>
+        <div class="choice_answer">
+            <input type="radio" name="btnradio" value="text_answer" id="adminBtn"  checked>
+            <label for="btnradio">Добавить поле ввода ответа</label>
+            <input type="radio" name="btnradio" value="point_answer" id="adminBtn">
+            <label for="btnradio">Выбор из предложенных вариантов ответа</label>
+        </div>
+
+        <div class="first_situation">
+            
+        </div>
+        <div class="second_situation">
+            <button class="add_answer">Добавить вариант ответа</button>
+            <li>Белый <button class="del_this_answer">Удалить</button></li>
+            <li>Белый <button class="del_this_answer">Удалить</button></li>
+            <li>Белый <button class="del_this_answer">Удалить</button></li>
+        </div>
+        <h3>Правильный ответ</h3>
+            <textarea name="answeer" id="true_answer" cols="30" rows="10"></textarea>            
+        <button class="save">Сохранить</button>
+        </div>
+        
+    </div>
+</body>
+</html>

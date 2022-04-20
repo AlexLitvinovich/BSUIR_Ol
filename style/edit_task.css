@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+h2,p,h1,h3,h4,h5,li,a{
+    margin: 0;
+    color: #0E2240;
+}
+.header{
+    padding: 1% 1.5%;
+    border-bottom: 2px solid #0E2240;
+}
+.head_container{
+    display: flex;
+    align-items: center;
+}
+.head_container li {
+    list-style-type: none;
+    margin-right: 8vw;
+    font-size: 24px;
+    font-weight:bold;
+}
+.head_container li a{
+    text-decoration: none;
+}
+#home{
+    font-size: 36px;
+}
+
+.part_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    display: flex;
+    margin: 4vh 0.75vw 3vh 0.75vw;
+}
+
+.upper h2{
+    margin-left: 42.5vw;
+}
+
+#back{
+    width: 50px;
+    height: 30px;
+}
+.edit_task{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.5vw;
+}
+#text_question{
+    width: 480px;
+    height: 100px;
+    padding: 0.5%;
+    border: 1.5px solid #0E2240;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+}
+
+.part_container h3{
+    margin: 1vh 0.25vw;
+}
+
+#add_photo{
+    color: #fff;
+    width: 154px;
+    height: 30px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;  
+    margin: 1.5vh 0;
+}
+.photo_container   {
+    display: flex;
+    margin-bottom: 1.5vh;
+}
+
+.second_situation{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vh;
+}
+.add_answer{
+    color: #fff;
+    width: 184px;
+    height: 30px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;  
+    margin-bottom: 0.75vh;
+}
+.second_situation li{
+    max-width: 200px;
+    max-height: 70px;
+    border: 1.5px solid #0E2240;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    padding: 0.2vh 0 0.2vh 1vw;
+}
+.del_this_answer{
+    margin-left:33px;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    border: none;
+    background: #F01212;
+    border-radius: 10px;
+    padding-left: 10px;}
+#true_answer{
+    width: 330px;
+    height: 75px;
+    border: 1.5px solid #0E2240;
+    box-sizing: border-box;
+    padding: 0.5%;
+    border-radius: 15px;
+}
+.save{
+    align-self: flex-end;
+    color: #fff;
+    width: 154px;
+    height: 35px;
+    background: #0E2240;
+    border: none;
+    border-radius: 10px;  
+    margin:2vh 4vw 0 0 ;
+}

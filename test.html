@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Test</title>
+</head>
+<body>
+    <h1>BSUIR Olympiad</h1>
+    <div class="own-container">
+        <form>
+            <div class="task-container">
+                <h2>Задание <span id="numOfTask">1</span></h2>
+                <p id="question">Текст вопроса бла бла бла?</p>
+                <div class="input_container">
+                    <!-- стили для label btn -->
+                    <!-- <input type="text" placeholder="Введите ваш ответ " id="answer"> -->
+                    <input  type="radio" name="btnradio" value="Ответ 1" >
+                    <label for="btnradio" >Ответ 1 </label><br>  
+                    <input  type="radio" name="btnradio"  value="Ответ 2" >
+                    <label for="btnradio">Ответ 2 </label><br> 
+                    <input  type="radio" name="btnradio" >
+                    <label for="btnradio"  value="Ответ 3">Ответ 3 </label><br> 
+                </div>
+                <input type="submit"  class="enter-btn" id="user_input" value="Ответить">
+            </div>
+        </form>
+        <div class="manage-container">
+            <div class="time">17:25</div>
+            <div class="choice-container">
+                <div class="selected_item active" data-num="0">1</div>
+                <div class="selected_item " data-num="1">2</div>
+                <div class="selected_item " data-num="2">3</div>
+                <div class="selected_item "data-num="3">4</div>
+                <div class="selected_item "data-num="4">5</div>
+                <div class="selected_item " data-num="5">6</div>
+                <div class="selected_item " data-num="6">7</div>
+                <div class="selected_item " data-num="7">8</div>
+                <div class="selected_item " data-num="8">9</div>
+                <div class="selected_item " data-num="9">10</div>
+                <div class="selected_item " data-num="10">11</div>
+                <div class="selected_item "data-num="11">12</div>
+            </div>
+            <button type="submit"  class="enter-btn" id="complite_test">Завершить тест</button>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+        const regBtn=document.getElementById('user_input')
+        // console.log(regBtn)
+        regBtn.addEventListener('click',()=>{
+            $.ajax({
+                url:'/test.js',
+                type:"POST",
+                data: $(id).serialize()
+                // data:"{Email:'" + $('#Email').val() + "', Login:'" + $('#RedLogin').val() + "',Password:'" + $('#regPassword').val() + "'}",
+            })
+            console.log($.data)
+        })  
+    </script>
+</body>
+</html>

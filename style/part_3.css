@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+h2,p,h1,h3,h4,h5,li,a{
+    margin: 0;
+    color: #0E2240;
+}
+.header{
+    padding: 1% 1.5%;
+    border-bottom: 2px solid #0E2240;
+}
+.head_container{
+    display: flex;
+    align-items: center;
+}
+.head_container li {
+    list-style-type: none;
+    margin-right: 8vw;
+    font-size: 24px;
+    font-weight:bold;
+}
+.head_container li a{
+    text-decoration: none;
+}
+#home{
+    font-size: 36px;
+}
+
+.massage_container{
+    display: flex;
+    flex-direction: column;
+}
+.upper{
+    display: flex;
+    margin: 4vh 0;
+}
+
+.upper h2{
+    margin-left: 42.5vw;
+}
+.massage_container h3{
+    margin-left: 3.5vw;
+    margin-bottom: 2.5vh;
+}
+
+.massage_container p{
+    margin-left: 3.5vw;
+}
+
+#interval_start,#interval_end{
+    width: 50px;
+    height: 20px;
+    border: 1.25px solid #0E2240;
+    border-radius: 25px;
+    margin: 0.5vh 1vw 2vh 0;
+    padding: 0 8px;
+}
+
+#massage_text{
+    width: 340px;
+    height: 160px;
+    margin-left: 3.5vw;
+    border: 1.5px solid #0E2240;
+    border-radius: 15px;
+    padding: 1.5%;
+}
+
+#send{
+    color: #fff;
+    width: 125px;
+    height: 29px;
+    background: #0E2240;
+    border-radius: 15px;
+    margin-left: 3.5vw;
+    margin-top: 5vh;
+}

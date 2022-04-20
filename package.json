@@ -1,0 +1,15 @@
+{
+  "name": "bsuir-olimp_vscode",
+  "version": "1.0.0",
+  "description": "\"Tried to make athorization\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexLitvinovich/BSUIR_Ol.git"
+  },
+  "author": "Alex Li",
+  "license": "ISC"
+}

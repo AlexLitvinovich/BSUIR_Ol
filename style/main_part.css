@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column  ;
+}
+h2,p,h1,h3,h4,h5,li{
+    margin: 0;
+    color: #0E2240;
+}
+h1{
+    text-align: center;
+    margin-top: 15vh;
+}
+h2{
+    margin-top: 30vh;
+    text-align: center;
+}
+.snd{
+    margin-top: 20vh;
+}
+#start{
+    align-self:center;
+    font-size: 14px;
+    color: #fff;
+    width: 170px;
+    height: 60px;
+    background: #0E2240;
+    border-radius: 9px;
+    margin-top: 20vh;
+}
